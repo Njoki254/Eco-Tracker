@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Eco Wild{{/block}}</title>
+    <link rel = "icon" href =
+            "/images/icon"
+          type = "image/x-icon">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+
+<ul class="nav nav-tabs" id="navbar">
+
+    <a class="navbar-brand" href="/"><img src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/animal-footprint-512.png" width="40px" height="35px" ></a>
+
+    <li role="presentation" id="navbar" class="active"><a href="/">HOME</a></li>
+    <li role="presentation" id="navbar"><a href="/ranger-guide"> Guide</a></li>
+    <li role="presentation" id="navbar"><a href="/sighting-form">Form</a></li>
+    <li role="presentation" id="navbar"><a href="/sighting">Sighting</a></li>
+    <li role="presentation" id="navbar"><a href="/endangered-sighting">Endangered</a></li>
+</ul>
+
+<div class="container">
+    <!--begin main template-->
+
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><a href="/ranger-guide"> &nbsp; &nbsp; </a></p>
+        </div>
+    </footer>
+    </body>
+    </html>
+{{/block}}
