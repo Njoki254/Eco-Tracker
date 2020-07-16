@@ -1,53 +1,63 @@
 
 {{#partial "content"}}
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                MAP
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center"><strong>Record a Sighting</strong></h2>
 
+                <form action="/sighting/new" method="post">
+                    <div class="form-group">
+                        <label class="active " for="animal-id">Animal Id</label>
+                        <input id="animal-id" name="animal-id" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="active" for="maxSize">Species</label>
+                        <input id="maxSize" name="maxSize" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="active" for="squadCause">Sight Location</label>
+                        <input id="squadCause" name="squadCause" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="active" for="age">Age</label>
+                        <input id="age" name="age" type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="active" for="health">Health Status</label>
+                        <input id="health" name="health" type="text" class="form-control">
+                    </div>
+                    <div class="container" #listofheroes>
+                        <h3><strong>Select The Animal Category, to filter through animals in the most danger.</strong></h3>
+                        <p><a href='/endangered-species' >Click here to view the endangered animals sighted so far</a></p>
+                        <div class= "row">
+                            <div class="col-md-4">
+                                <input type="radio" id="1" name="life-status" values="endangered">
+                                <label for="endangered"> Endangered</label><br>
+                                <input type="radio" id="2" name="life-status" value="unendangered">
+                                <label for="unendangered">Unendangered</label><br>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <button type="submit" class=" btn btn-success" >Save sighting!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <div class="container">
-        <h2 class="text-center"><strong>Create a Squad</strong></h2>
 
-        <form action="/squads/new" method="post">
-            <div class="form-group">
-                <label class="active " for="animal-id">Animal Id</label>
-                <input id="animal-id" name="animal-id" type="text" class="form-control">
-            </div>
-
-            <div class="form-group">
-                <label class="active" for="maxSize">Species</label>
-                <input id="maxSize" name="maxSize" type="text" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="active" for="squadCause">Sight Location</label>
-                <input id="squadCause" name="squadCause" type="text" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="active" for="age">Age</label>
-                <input id="age" name="age" type="number" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="active" for="health">Health Status</label>
-                <input id="health" name="health" type="text" class="form-control">
-            </div>
-            <div class="container" #listofheroes>
-                <h3><strong>Select The Animal Category, to filter through animals in the most danger.</strong></h3>
-                <p><a href='/endangered-species' >Click here to view the endangered animals sighted so far</a></p>
-                <div class= "row">
-                    <div class="col-md-4">
-                        <input type="radio" id="1" name="life-status" values="endangered">
-                        <label for="endangered"> Endangered</label><br>
-                        <input type="radio" id="2" name="life-status" value="unendangered">
-                        <label for="unendangered">Unendangered</label><br>
-
-                </div>
-
-
-
-
-            </div>
-
-            <button type="submit" class=" btn btn-success" >Create Squad!</button>
-        </form>
     </div>
 
 

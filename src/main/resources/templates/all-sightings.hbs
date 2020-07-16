@@ -1,0 +1,24 @@
+{{#partial "content"}}
+
+    <div class="card">
+
+        <div class="container">
+            {{#each sightingInstance}}
+                id: {{animalId}}<br>
+                Species: {{species}}<br>
+                Age: {{}}
+                Health:{{}}
+                Location {{}}
+                <br>
+                <a href="/edit-sight/{{id}}" width="5px" height="5px">Edit Sighting</a><br>
+                <a href="/delete-sight/{{id}}" width="5px" height="5px">Delete Sighting</a>
+
+                <br>
+                <br>
+                <br>
+            {{/each}}
+        </div>
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}
