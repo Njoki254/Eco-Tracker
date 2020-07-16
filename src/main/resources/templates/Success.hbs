@@ -1,1 +1,30 @@
-{{#
+{{#partial "content"}}
+    <div class="Container" id="homepage">
+        <div class="page-header">
+            <h1 id="logo"><strong>Sighting Saved Successfully</strong></h1>
+            <br>
+            <h2 id="details">Details of the sighting</h2>
+
+                {{newSighting.animalId}}<br>
+                {{newSighting.species}}<br>
+                {{newSighting.age}}<br>
+                {{newSighting.health}}<br>
+                {{newSighting.location}}<br>
+
+                <a href="/edit-sight/{{id}}" width="5px" height="5px">Edit Sighting</a><br>
+                <a href="/delete-sight/{{id}}" width="5px" height="5px">Delete Sighting</a>
+
+                <br>
+                <br>
+                <br>
+
+
+        </div>
+
+
+
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}
