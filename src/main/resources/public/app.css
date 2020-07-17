@@ -1,10 +1,18 @@
 * {
   box-sizing: border-box;
+
+}
+#navbar{
+background-color:#84701E;
+color: white;
+}
+a{
+color:white;
 }
 
 #map{
   padding: 50px;
-    background-color: lightcyan;
+    background-color: #84701E;
   transition: transform .2s;
   width: 600px;
   height: 650px;
@@ -26,4 +34,16 @@ background-size:cover;
 background-position: center-center;
 text-align:center;
 color: white;
+box-shadow: 0 0 8px 8px white inset;
 }
+#thebig5{
+box-shadow: 0 0 8px 8px white inset;
+}
+#endangered1{
+width: 300px;
+height:200px;
+
+ }
+ .card{
+ background-color:#84701E;
+ }
