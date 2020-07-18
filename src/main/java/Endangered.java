@@ -53,6 +53,9 @@ public class Endangered extends Animal{
     public int getHealthLevel() {
         return healthLevel;
     }
+    public int getAge(){
+        return age;
+    }
   /*  @Override
     public boolean isAlive() {
         if (healthLevel <= MAX_HEALTH_LEVEL) {
